@@ -14,3 +14,4 @@ The "P-score" is a sum of the follower projection and aggregate sentiment score.
 
 Run the code sample without specifying any arguments by doing:
 `./run.sh`
+from the project directory ("/bondstreet"). You'll be prompted for three string inputs with NO SPACES.
