@@ -35,12 +35,12 @@ public class TwitterProjection {
 	 */
 	private void setUpTwitterFactory() {
 		ConfigurationBuilder cb = new ConfigurationBuilder();
-    cb.setOAuthConsumerKey(_twitterConsumerKey);
-    cb.setOAuthConsumerSecret(_twitterConsumerSecret);
-    cb.setOAuthAccessToken(_twitterAccessToken);
-    cb.setOAuthAccessTokenSecret(_twitterAccessTokenSecret);
+		cb.setOAuthConsumerKey(_twitterConsumerKey);
+		cb.setOAuthConsumerSecret(_twitterConsumerSecret);
+		cb.setOAuthAccessToken(_twitterAccessToken);
+		cb.setOAuthAccessTokenSecret(_twitterAccessTokenSecret);
 
-    _twitterObject = new TwitterFactory(cb.build()).getInstance();
+		_twitterObject = new TwitterFactory(cb.build()).getInstance();
 	}
 	
 	/**
@@ -109,10 +109,9 @@ public class TwitterProjection {
 		  .addHeader("cache-control", "no-cache")
 		  .build();
 
-	
-			Response response = client.newCall(request).execute();
-			processProjectionResponse(response.body().string().toString());
-			determineFollowerGrowthRate();
+		Response response = client.newCall(request).execute();
+		processProjectionResponse(response.body().string().toString());
+		determineFollowerGrowthRate();
 	}
 	
 	/**
