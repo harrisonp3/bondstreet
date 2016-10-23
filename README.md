@@ -14,14 +14,3 @@ The "P-score" is a sum of the follower projection and aggregate sentiment score.
 
 Run the code sample without specifying any arguments by doing:
 `./run.sh`
-
-Run the code sample by specifying the optional arguments by doing:
-`./run.sh --term "bars" --location "San Francisco, CA"`
-
-## Steps to run on Windows
-
-Run the code sample without specifying any arguments by doing:
-`.\run.bat`
-
-Run the code sample by specifying the optional arguments by doing:
-`.\run.bat --term "bars" --location "San Francisco, CA"`
